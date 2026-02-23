@@ -21,6 +21,8 @@ http.createServer(function(req,res){
     res.end();
 }).listen(8080);
 
+const myModule = require('./my-module.js');
+console.log(myModule.myFunction());
 const https = require('https');
 https.get('https://jsonplaceholder.typicode.com/posts/1',(resp) => {
     let data ='';
