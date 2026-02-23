@@ -57,7 +57,7 @@ myPromise
   });
 
 const myfunction = () => {
-    console.log("My async function is running");
+    console.log("My sync function is working correctly");
 };
 
 
