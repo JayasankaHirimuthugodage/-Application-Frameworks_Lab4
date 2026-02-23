@@ -20,3 +20,6 @@ http.createServer(function(req,res){
     res.write('Hello World!');
     res.end();
 }).listen(8080);
+
+const myModule = require('./my-module.js');
+console.log(myModule.myFunction());
