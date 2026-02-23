@@ -37,3 +37,21 @@ https.get('https://jsonplaceholder.typicode.com/posts/1',(resp) => {
 }).on('error',(err)=>{
     console.log("Error:"+err.message);
 });
+
+const condition = true;   // Change to false to test failure
+
+const myPromise = new Promise((resolve, reject) => {
+  if (condition) {
+    resolve('Success!');
+  } else {
+    reject('Failure!');
+  }
+});
+
+myPromise
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
