@@ -55,3 +55,20 @@ myPromise
   .catch((error) => {
     console.log(error);
   });
+
+const myfunction = () => {
+    console.log("My async function is running");
+};
+
+
+
+  async function myFunction(){
+    try{
+        const result = await myPromise;
+        console.log(result);
+    }catch(error){
+        console.log(error);
+    }
+  }
+
+  myfunction();
